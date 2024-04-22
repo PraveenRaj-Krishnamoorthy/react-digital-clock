@@ -28,11 +28,13 @@ export default function App() {
   return (
     <>
       <main>
-        <h1>{Time.getDate()} - {Time.getMonth() + 1} - {Time.getFullYear()}</h1>
-        <div className='time'>
-          <h1>{Hours(Time.getHours()) < 10 ? "0" + Hours(Time.getHours()) : Hours(Time.getHours())}</h1>
-          <h1>{Minutes(Time.getMinutes())}</h1>
-          <h1>{Seconds(Time.getSeconds())}</h1>
+        <div className='timer'>
+          <h1>{Time.getDate()} - {Time.getMonth() + 1} - {Time.getFullYear()}</h1>
+          <div className='time'>
+            <h1>{Hours(Time.getHours()) < 10 ? "0" + Hours(Time.getHours()) : Hours(Time.getHours())} :</h1>
+            <h1>{Minutes(Time.getMinutes())} :</h1>
+            <h1>{Seconds(Time.getSeconds())}</h1>
+          </div>
         </div>
       </main>
     </>
