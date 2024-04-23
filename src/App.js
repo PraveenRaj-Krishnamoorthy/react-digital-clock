@@ -9,7 +9,7 @@ export default function App() {
     return () => (
       clearInterval(Timer)
     )
-  }, [])
+  }, [Time])
   // Or Use the below interval //
   // setInterval(()=>{
   //   setTime(new Date())

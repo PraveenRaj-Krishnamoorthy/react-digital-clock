@@ -18,7 +18,9 @@ main {
     border-radius: 10px;
     background-color: transparent;
     backdrop-filter: blur(20px);
-    border: 2px solid black;
+    border: 2px solid coral;
+    background: linear-gradient(rgba(220, 122, 122, 0.9), rgba(9, 92, 201, 0.1));
+    box-shadow: 0px 0px 10px black;
 
     .time {
       border: 2px solid black;
@@ -26,6 +28,26 @@ main {
       justify-content: center;
       gap: 10px;
       border-radius: 10px;
+      background-color: lightpink;
+      box-shadow: 0px 0px 10px lightblue;
+      animation-name: example;
+      animation-duration: 3s;
+
     }
   }
 }
+
+/* .time {
+  animation-name: demo;
+  animation-duration: 3s;
+}
+
+@keyframes demo {
+  0% {
+    color: aqua;
+  }
+
+  100% {
+    color: white;
+  }
+} */
